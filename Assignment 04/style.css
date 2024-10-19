@@ -1,0 +1,19 @@
+.profile-container {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+#profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.form-group label {
+    font-weight: bold;
+}

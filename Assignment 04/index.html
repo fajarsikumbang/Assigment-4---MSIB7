@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Profile Section</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h2>Profile Section</h2>
+    </div>
+
+    <div class="container profile-container">
+        <div class="row profile-section">
+            <div class="col-md-4 text-center">
+                <img src="fajar.jpeg" id="profileImage" class="img-thumbnail" alt="Profile Picture">
+                <!-- <input type="file" id="uploadImage" onchange="loadImage(event)" class="mt-3"> -->
+            </div>
+            
+            <div class="col-md-8">
+                <p><strong>Name:</strong> <span id="profileName">Fajar Maulana</span></p>
+                <p><strong>Role:</strong> <span id="profileRole">Front End Designer</span></p>
+                <p><strong>Availability:</strong> <span id="profileAvailability">Full Time</span></p>
+                <p><strong>Age:</strong> <span id="profileAge">19</span></p>
+                <p><strong>Location:</strong> <span id="profileLocation">Karawang</span></p>
+                <p><strong>Years of Experience (yoe):</strong> <span id="profileYoe">2</span></p>
+                <p><strong>Email:</strong> <span id="profileEmail">if22.fajarmaulana@mhs.ubpkarawang.ac.id</span></p>
+                <button class="btn btn-primary" onclick="editProfile()">Edit</button>
+                <button class="btn btn-success ml-2">Resume</button>
+            </div>
+        </div>
+
+        <div id="profileForm" style="display:none;" class="mt-3">
+            <h4>Edit Profile</h4>
+            <form onsubmit="event.preventDefault(); saveProfile();">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Role:</label>
+                    <input type="text" class="form-control" id="role" required>
+                </div>
+                <div class="form-group">
+                    <label for="availability">Availability:</label>
+                    <input type="text" class="form-control" id="availability" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" class="form-control" id="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" class="form-control" id="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="yoe">Years of Experience (yoe):</label>
+                    <input type="number" class="form-control" id="yoe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <button type="submit" class="btn btn-success">Save</button>
+                <button type="button" class="btn btn-secondary" onclick="document.getElementById('profileForm').style.display='none';">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
