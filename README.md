@@ -28,7 +28,7 @@ This project is a simple profile section where users can view their profile info
 .
 ├── index.html           # Main HTML file for profile section layout
 ├── script.js            # JavaScript functionality for form handling and image upload
-└── default-avatar.png    # Default profile image placeholder
+└── fajar.jpg            # Default profile image placeholder
 ```
 
 ## Installation
