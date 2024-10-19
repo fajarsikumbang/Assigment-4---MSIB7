@@ -80,7 +80,7 @@ This project is a simple profile section where users can view their profile info
 
 ## Example Screenshot
 
-![Profile Section Example](fajar.jpeg)
+![Assignment 04](fajar.jpeg)
 
 ## Future Improvements
 
